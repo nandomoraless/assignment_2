@@ -1,0 +1,29 @@
+// Sizes - Mobile First
+
+$base-font-size: 20px;
+$font-scale:14;
+
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: $base-font-size + $font-scale * (6 - $i);
+        line-height: 1.2em;
+    }
+}
+
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+
+}
+
+h4,
+h5,
+h6 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: Normal;
+}
