@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
+var concat = require('gulp-concat');
 
 function style() {
 
@@ -26,6 +27,15 @@ function watch() {
     gulp.watch('./*.html').on('change', browserSync.reload);
     gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 }
+
+
+
+gulp.task('concat', function () {
+    return gulp.src('./js/**/*.js')
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('js'));
+});
+
 
 exports.style = style;
 exports.watch = watch;

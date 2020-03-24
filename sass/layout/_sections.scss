@@ -1,0 +1,10 @@
+.wrapper {
+    max-width: 1300px;
+    margin: auto $grid__gap;
+}
+
+.intro {
+    background: linear-gradient($color-dark-teal, $color-teal);
+    height: 100vh;
+    color: white;
+}

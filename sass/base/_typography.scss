@@ -1,7 +1,7 @@
 // Sizes - Mobile First
 
 $base-font-size: 20px;
-$font-scale:14;
+$font-scale:4;
 
 
 @for $i from 1 through 6 {
@@ -26,4 +26,38 @@ h5,
 h6 {
     font-family: 'Archivo', sans-serif;
     font-weight: Normal;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+p::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    background-color: white;
+    border-top: 3px solid white;
+}
+
+
+
+// Sizes Tablet and Larger
+
+@media only screen and (min-width: $bp-medium) {
+
+    $base-font-size: 20px;
+    $font-scale: 14;
+
+
+    @for $i from 1 through 6 {
+        h#{$i} {
+            font-size: $base-font-size + $font-scale * (6 - $i);
+            line-height: 1.2em;
+
+
+        }
+    }
 }

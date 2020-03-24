@@ -127,23 +127,23 @@ table {
   border-spacing: 0; }
 
 h1 {
-  font-size: 90px;
+  font-size: 40px;
   line-height: 1.2em; }
 
 h2 {
-  font-size: 76px;
+  font-size: 36px;
   line-height: 1.2em; }
 
 h3 {
-  font-size: 62px;
+  font-size: 32px;
   line-height: 1.2em; }
 
 h4 {
-  font-size: 48px;
+  font-size: 28px;
   line-height: 1.2em; }
 
 h5 {
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.2em; }
 
 h6 {
@@ -161,3 +161,51 @@ h5,
 h6 {
   font-family: 'Archivo', sans-serif;
   font-weight: Normal; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em; }
+
+p::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  background-color: white;
+  border-top: 3px solid white; }
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 90px;
+    line-height: 1.2em; }
+  h2 {
+    font-size: 76px;
+    line-height: 1.2em; }
+  h3 {
+    font-size: 62px;
+    line-height: 1.2em; }
+  h4 {
+    font-size: 48px;
+    line-height: 1.2em; }
+  h5 {
+    font-size: 34px;
+    line-height: 1.2em; }
+  h6 {
+    font-size: 20px;
+    line-height: 1.2em; } }
+
+.button {
+  height: 2.75em; }
+
+.button--pink {
+  background-color: #FF004A;
+  color: white; }
+
+.wrapper {
+  max-width: 1300px;
+  margin: auto 16px; }
+
+.intro {
+  background: linear-gradient(#003941, #00838E);
+  height: 100vh;
+  color: white; }
